@@ -4,3 +4,5 @@ fastfetch
 starship init fish | source
 
 end
+
+alias syu="sudo dnf update --refresh"
