@@ -1,0 +1,94 @@
+# ~/.config/starship.toml
+
+format = """
+╭╴$os$username$hostname $directory$git_branch$git_status$fill$time
+├╴$python$nodejs$rust$golang$package$cmd_duration
+╰╴$character
+"""
+
+add_newline = false
+
+palette = "fedora"
+
+[palettes.fedora]
+blue = "#51A2DA"
+dark_blue = "#294172"
+cyan = "#3FC6DE"
+green = "#8CC265"
+yellow = "#E5C07B"
+orange = "#D19A66"
+red = "#E06C75"
+purple = "#C678DD"
+gray = "#6C7086"
+white = "#ECEFF4"
+
+[os]
+disabled = false
+style = "bold blue"
+
+[os.symbols]
+Fedora = " "
+
+[username]
+show_always = true
+style_user = "bg:blue fg:white bold"
+style_root = "bg:red fg:white bold"
+format = "[](blue)[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bg:blue fg:white bold"
+format = "[@$hostname]($style)[](blue) "
+
+[directory]
+style = "bold cyan"
+truncate_to_repo = false
+truncation_length = 3
+read_only = " "
+format = "in [$path]($style)[$read_only](red) "
+
+[git_branch]
+symbol = " "
+style = "purple"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "yellow"
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "gray"
+format = "[$time]($style)"
+
+[python]
+symbol = " "
+style = "yellow"
+
+[nodejs]
+symbol = " "
+style = "green"
+
+[rust]
+symbol = " "
+style = "orange"
+
+[golang]
+symbol = " "
+style = "cyan"
+
+[package]
+symbol = "󰏗 "
+style = "purple"
+
+[cmd_duration]
+min_time = 1000
+format = "took [$duration](red) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold blue)"
