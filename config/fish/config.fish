@@ -6,3 +6,4 @@ starship init fish | source
 end
 
 alias syu="sudo dnf update --refresh"
+alias search="dnf search"
