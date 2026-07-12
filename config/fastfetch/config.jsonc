@@ -83,6 +83,11 @@
 
             },
         },
+	{
+	    "type": "disk",
+	    "key": " ",
+	    "keyColor": "34",
+	},
 	"break",
 	{
 	    "type": "custom",
@@ -98,6 +103,16 @@
             "key": " ",
             "keyColor": "34",
         },
+	{
+	    "type": "icons",
+	    "key": " ",
+	    "keyColor": "34",
+	},
+	{
+	    "type": "theme",
+	    "key": " ",
+	    "keyColor": "34",
+	},
         {
             "type": "cursor",
             "key": "󰇀 ",
@@ -126,7 +141,7 @@
 	"break",
 	{
 	    "type": "custom",
-	    "format": "\u001b[35mSYSTEM",
+	    "format": "\u001b[31mSYSTEM",
 	},
         {
             "type": "uptime",
