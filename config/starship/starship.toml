@@ -28,6 +28,11 @@ style = "bold blue"
 
 [os.symbols]
 Fedora = " "
+Nobara = " "
+Arch = " "
+NixOS = " "
+Debian = " "
+
 
 [username]
 show_always = true
